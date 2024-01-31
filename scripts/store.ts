@@ -27,7 +27,7 @@ const createWritableLocalStorageStore = <T>(key:string, startValue:T) => {
     };
   }
   
-  export const data : Writable<Data[]> = createWritableLocalStorageStore('data',[{counter:0,info:"Brest"}]);
+  export const data : Writable<Data[]> = createWritableLocalStorageStore('data',[]);
 
   export const positions: Writable<GeolocationPosition[]> = createWritableLocalStorageStore('positions',[]);
   
