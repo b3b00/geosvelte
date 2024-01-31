@@ -71,6 +71,6 @@
     <p>recording... {$positions.length} points</p>
     <button on:click={stop}>stop</button>
     {/if}
-    <textarea bind:value={gpx}></textarea>
+    <pre>{gpx}</pre>
     
 </div>
