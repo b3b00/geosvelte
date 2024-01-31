@@ -7,12 +7,14 @@
     }
 
     onMount(async () => {
+        if (! $data || $data.length == 0) {
         $data = [
             {info:'ici',counter:0},
             {info:'maintenant',counter:0},
         ];
+        }
         console.log($data);
-
+        
         });
  
     data.useLocalStorage();
